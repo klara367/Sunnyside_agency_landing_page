@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="display-flex header-flex">
+            <a href="#"><img src="./images/logo.svg" alt="Sunnyside agency logo" class="logo"></a>
+            <nav class="display-nav-bar-none">
+                <ul class="display-flex header-flex">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#" class="fraunces-font contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="./images/icon-hamburger.svg" alt="Menu-icon" id="hamburger">
+        </div>
+        <div id="mobile-menu">
+            <nav>
+                <ul>
+                    <li><a href="#" class="mobile-menu__a">About</a></li>
+                    <li><a href="#" class="mobile-menu__a">Services</a></li>
+                    <li><a href="#" class="mobile-menu__a">Projects</a></li>
+                    <li><a href="#" class="fraunces-font contact-btn mobile-menu__contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1 class="fraunces-font">We are creatives</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow down" class="arrow-down">
+    </header>
+    <main>
+        <div class="main-display-grid">
+            <picture class="grid-right">
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-transform.jpg">
+                <img src="./images/mobile/image-transform.jpg" alt="Egg image">
+            </picture>
+            <section class="main-text-part grid-left">
+                <h2 class="fraunces-font h2-transform">Transform your brand</h2>
+                <p class="margin-bottom">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                <a href="#" class="fraunces-font btn-learn-more">Learn more</a>
+            </section>
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-stand-out.jpg">
+                <img src="./images/mobile/image-stand-out.jpg" alt="Pink cup image">
+            </picture>
+            <section class="main-text-part">
+                <h2 class="fraunces-font">Stand out to the right audience</h2>
+                <p class="margin-bottom">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+                <a href="#" class="fraunces-font btn-learn-more btn-learn-more-clr-second">Learn more</a>
+            </section>
+            <section class="main-bottom-section cherry-section">
+                <h2 class="fraunces-font main-bottom-section-h2 dark-cyan-text">Graphic design</h2>
+                <p class="dark-cyan-text main-bottom-section-p">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+            </section>
+            <section class="main-bottom-section orange-section">
+                <h2 class="fraunces-font main-bottom-section-h2 dark-blue-text">Photography</h2>
+                <p class="dark-blue-text main-bottom-section-p">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+            </section>
+        </div>
+        <section class="testimonials">
+            <h2 class="testimonials__h2 fraunces-font">Client testimonials</h2>
+            <div class="testimonials__display-flex-center">
+                <div class="testimonials__testimonee">
+                    <img src="./images/image-emily.jpg" alt="Testimonee photo" class="testimonials__img">
+                    <blockquote>  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</blockquote>
+                    <p class="fraunces-font testimonials__name">Emily R.</p>
+                    <p class="testimonials__position">Marketing Director</p>
+                </div>
+                <div class="testimonials__testimonee">
+                    <img src="./images/image-thomas.jpg" alt="Testimonee photo" class="testimonials__img">
+                    <blockquote> Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</blockquote>
+                    <p class="fraunces-font testimonials__name">Thomas S.</p>
+                    <p class="testimonials__position">Chief Operating Officer</p>  
+                </div>
+                <div class="testimonials__testimonee">
+                    <img src="./images/image-jennie.jpg" alt="Testimonee photo" class="testimonials__img">
+                    <blockquote>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</blockquote>
+                    <p class="fraunces-font testimonials__name">Jennie F.</p>
+                    <p class="testimonials__position">Business Owner</p>
+                </div>
+            </div>
+        </section>
+        <section class="img-presentation display-grid-btm-imgs">
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+                <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milk bottles image">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-orange.jpg">
+                <img src="./images/mobile/image-gallery-orange.jpg" alt="Orange image">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-cone.jpg">
+                <img src="./images/mobile/image-gallery-cone.jpg" alt="Icecream cone image">
+            </picture>
+            <picture>
+                <source media="(min-width: 768px)" srcset="./images/desktop/image-gallery-sugarcubes.jpg">
+                <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugarcubes image">
+            </picture>
+        </section>
+    </main>
+    <footer class="footer">
+        <a href="#"><img src="./images/logo.svg" alt="" class="footer-logo"></a>
+        <nav>
+            <ul class="display-flex footer-flex footer-flex-gap-bg footer__margin">
+                <li><a href="#" class="footer-m-cyan-text btn-white-on-hover">About</a></li>   
+                <li><a href="#" class="footer-m-cyan-text btn-white-on-hover">Services</a></li>  
+                <li><a href="#" class="footer-m-cyan-text btn-white-on-hover">Projects</a></li>  
+            </ul>
+        </nav>
+        <nav>
+            <ul class="display-flex footer-flex">
+                <i><a href="#" class="btn-white-on-hover"><img src="./images/icon-facebook.svg" alt=""></a></i>
+                <i><a href="#" class="btn-white-on-hover"><img src="./images/icon-instagram.svg" alt=""></a></i>
+                <i><a href="#" class="btn-white-on-hover"><img src="./images/icon-twitter.svg" alt=""></a></i>
+                <i><a href="#" class="btn-white-on-hover"><img src="./images/icon-pinterest.svg" alt=""></a></i>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
